@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nautilus DiveKit — Informativa sulla privacy</title>
+<title>Nautilus DiveKit — Informativa sulla privacy / Privacy Policy</title>
+<meta name="description" content="Informativa sulla privacy dell'app Nautilus DiveKit: nessun dato personale viene raccolto, trasmesso o condiviso.">
 <style>
   :root{
     --fondo:#ffffff; --testo:#1a1a1a; --tenue:#5a6570;
@@ -21,181 +22,325 @@
     font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   }
   .wrap{max-width:760px; margin:0 auto; padding:32px 20px 72px}
-  header{border-bottom:2px solid var(--bordo); padding-bottom:20px; margin-bottom:28px}
+  header{border-bottom:2px solid var(--bordo); padding-bottom:20px; margin-bottom:8px}
   h1{color:var(--blu); font-size:1.7rem; margin:0 0 6px}
-  .sub{color:var(--tenue); font-size:.95rem; margin:0}
-  h2{color:var(--azzurro); font-size:1.15rem; margin:32px 0 10px}
+  h2{color:var(--blu); font-size:1.25rem; margin:0 0 4px}
+  h3{color:var(--azzurro); font-size:1.1rem; margin:30px 0 10px}
   p,li{margin:0 0 12px}
   ul{padding-left:22px}
   a{color:var(--azzurro)}
   .sintesi{
     background:var(--riquadro); border-left:4px solid var(--azzurro);
-    padding:16px 18px; border-radius:0 8px 8px 0; margin:20px 0 8px;
+    padding:16px 18px; border-radius:0 8px 8px 0; margin:18px 0 8px;
   }
   .sintesi p{margin:0}
-  nav{display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 0}
-  nav button{
-    font:inherit; font-size:.9rem; cursor:pointer; padding:6px 14px;
-    border:1px solid var(--bordo); background:transparent; color:var(--tenue);
-    border-radius:999px;
+  .data{color:var(--tenue); font-size:.9rem; margin-top:36px;
+    padding-top:16px; border-top:1px solid var(--bordo)}
+  nav{display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 0}
+  nav a{
+    font-size:.9rem; text-decoration:none; padding:6px 14px;
+    border:1px solid var(--bordo); color:var(--tenue); border-radius:999px;
   }
-  nav button:hover{border-color:var(--azzurro); color:var(--azzurro)}
-  nav button[aria-current="true"]{
-    background:var(--azzurro); border-color:var(--azzurro); color:#fff; font-weight:600;
-  }
-  footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--bordo);
-    color:var(--tenue); font-size:.88rem}
+  nav a:hover{border-color:var(--azzurro); color:var(--azzurro)}
+  nav a.attiva{background:var(--azzurro); border-color:var(--azzurro);
+    color:#fff; font-weight:600}
+  section{padding-top:22px}
+  /* Senza JavaScript si vedono tutte le lingue una sotto l'altra: il testo
+     resta comunque leggibile e completo. Con JS ne resta visibile una sola. */
+  body.js section[hidden]{display:none}
+  section + section{border-top:1px dashed var(--bordo); margin-top:30px}
+  body.js section + section{border-top:none; margin-top:0}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>Nautilus DiveKit</h1>
-    <p class="sub" id="sottotitolo">Informativa sulla privacy</p>
-    <nav id="lingue" aria-label="Lingua"></nav>
+    <nav id="lingue">
+      <a href="#it" data-lang="it">Italiano</a>
+      <a href="#en" data-lang="en">English</a>
+      <a href="#es" data-lang="es">Español</a>
+      <a href="#fr" data-lang="fr">Français</a>
+      <a href="#de" data-lang="de">Deutsch</a>
+      <a href="#pt" data-lang="pt">Português</a>
+    </nav>
   </header>
-  <main id="contenuto"></main>
-  <footer id="pie"></footer>
+
+  <!-- ============================== ITALIANO ============================== -->
+  <section id="it" lang="it">
+    <h2>Informativa sulla privacy</h2>
+    <div class="sintesi"><p><strong>Nautilus DiveKit non raccoglie, non trasmette e non condivide alcun dato personale.</strong> Tutto ciò che inserisci resta sul tuo dispositivo. L'app non richiede la creazione di un account, non mostra pubblicità, non usa strumenti di statistica o di tracciamento e non comunica con alcun server.</p></div>
+
+    <h3>1. Chi tratta i dati</h3>
+    <p>L'applicazione è sviluppata da Fabio Sgambaro. Per qualsiasi domanda: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <h3>2. Quali informazioni gestisce l'app e dove restano</h3>
+    <p>L'app salva sul telefono le informazioni che inserisci tu: immersioni, brevetti e certificati, liste di attrezzatura, centri e punti di immersione, contatti dei compagni di immersione, collegamenti a siti, dati personali e di emergenza, preferenze di lingua e tema. Questi dati vengono scritti in una banca dati locale e in file all'interno dell'area riservata dell'app sul dispositivo. <strong>Non vengono inviati né allo sviluppatore né a terze parti.</strong></p>
+
+    <h3>3. Permessi richiesti e loro motivo</h3>
+    <ul>
+      <li><strong>Posizione (GPS)</strong> — utilizzata soltanto quando premi il pulsante per inserire la posizione attuale di un centro o di un punto di immersione. Le coordinate ottenute vengono scritte nella scheda e restano sul dispositivo. L'app non accede alla posizione quando è chiusa o in secondo piano.</li>
+      <li><strong>Notifiche</strong> — servono ad avvisarti dell'imminente scadenza di un documento. Le notifiche sono generate localmente dal telefono: nessun dato esce dal dispositivo.</li>
+      <li><strong>Fotocamera e selezione di file</strong> — per allegare fotografie o documenti PDF alle tue schede. Le immagini scelte vengono copiate nell'area riservata dell'app.</li>
+      <li><strong>Avvio del dispositivo</strong> — serve unicamente a riprogrammare i promemoria di scadenza dopo il riavvio del telefono.</li>
+    </ul>
+
+    <h3>4. Backup ed esportazioni</h3>
+    <p>L'app può creare un file di backup dei tuoi dati e un documento PDF del logbook. Questi file vengono generati sul dispositivo e sei tu a decidere se e a chi inviarli. Lo sviluppatore non li riceve e non vi ha accesso.</p>
+
+    <h3>5. Servizi di terze parti</h3>
+    <p>L'app non integra pubblicità, strumenti di analisi, sistemi di accesso tramite social network né altri servizi esterni. Quando tocchi un collegamento a un sito, un numero di telefono, un indirizzo email o una posizione sulle mappe, esci dall'app e si applicano le condizioni dell'applicazione o del sito che si apre.</p>
+
+    <h3>6. Minori</h3>
+    <p>L'app non è rivolta a minori di 13 anni e in ogni caso non raccoglie dati da alcun utente.</p>
+
+    <h3>7. Cancellazione dei dati</h3>
+    <p>Puoi cancellare i tuoi dati in qualsiasi momento dalle impostazioni dell'app, oppure disinstallandola: la disinstallazione rimuove la banca dati locale e tutti gli allegati.</p>
+
+    <h3>8. Modifiche a questa informativa</h3>
+    <p>Eventuali modifiche saranno pubblicate su questa stessa pagina, con la data di aggiornamento in evidenza.</p>
+
+    <h3>9. Contatti</h3>
+    <p>Per qualunque domanda relativa a questa informativa: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <p class="data">Ultimo aggiornamento: 7 agosto 2026</p>
+  </section>
+
+  <!-- =============================== ENGLISH ============================== -->
+  <section id="en" lang="en">
+    <h2>Privacy Policy</h2>
+    <div class="sintesi"><p><strong>Nautilus DiveKit does not collect, transmit or share any personal data.</strong> Everything you enter stays on your device. The app requires no account, shows no advertising, uses no analytics or tracking tools, and communicates with no server.</p></div>
+
+    <h3>1. Who processes the data</h3>
+    <p>The application is developed by Fabio Sgambaro. For any question: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <h3>2. What the app handles, and where it stays</h3>
+    <p>The app stores on your phone the information you enter: dives, certifications and documents, gear checklists, dive centres and dive sites, contacts of your dive buddies, website links, personal and emergency details, language and theme preferences. This data is written to a local database and to files inside the app's private storage on the device. <strong>It is never sent to the developer or to any third party.</strong></p>
+
+    <h3>3. Permissions and why they are needed</h3>
+    <ul>
+      <li><strong>Location (GPS)</strong> — used only when you tap the button to fill in the current position of a dive centre or dive site. The coordinates are written into the entry and stay on the device. The app does not access your location when closed or in the background.</li>
+      <li><strong>Notifications</strong> — used to warn you that a document is about to expire. Notifications are generated locally by the phone: no data leaves the device.</li>
+      <li><strong>Camera and file selection</strong> — to attach photos or PDF documents to your entries. Selected images are copied into the app's private storage.</li>
+      <li><strong>Device boot</strong> — used solely to reschedule expiry reminders after the phone restarts.</li>
+    </ul>
+
+    <h3>4. Backups and exports</h3>
+    <p>The app can create a backup file of your data and a PDF of your logbook. These files are generated on your device and it is entirely up to you whether and to whom you send them. The developer neither receives them nor has access to them.</p>
+
+    <h3>5. Third-party services</h3>
+    <p>The app includes no advertising, no analytics, no social sign-in and no other external services. When you tap a website link, a phone number, an email address or a location on a map, you leave the app and the terms of the application or website that opens will apply.</p>
+
+    <h3>6. Children</h3>
+    <p>The app is not directed at children under 13 and in any case collects no data from any user.</p>
+
+    <h3>7. Deleting your data</h3>
+    <p>You can delete your data at any time from the app's settings, or by uninstalling the app: uninstalling removes the local database and all attachments.</p>
+
+    <h3>8. Changes to this policy</h3>
+    <p>Any changes will be published on this same page, with the update date shown clearly.</p>
+
+    <h3>9. Contact</h3>
+    <p>For any question about this policy: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <p class="data">Last updated: 7 August 2026</p>
+  </section>
+
+  <!-- =============================== ESPAÑOL ============================== -->
+  <section id="es" lang="es">
+    <h2>Política de privacidad</h2>
+    <div class="sintesi"><p><strong>Nautilus DiveKit no recoge, no transmite ni comparte ningún dato personal.</strong> Todo lo que introduces permanece en tu dispositivo. La aplicación no requiere crear una cuenta, no muestra publicidad, no utiliza herramientas de estadística o de seguimiento y no se comunica con ningún servidor.</p></div>
+
+    <h3>1. Quién trata los datos</h3>
+    <p>La aplicación está desarrollada por Fabio Sgambaro. Para cualquier consulta: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <h3>2. Qué información gestiona la aplicación y dónde permanece</h3>
+    <p>La aplicación guarda en el teléfono la información que introduces tú: inmersiones, titulaciones y certificados, listas de equipo, centros y puntos de inmersión, contactos de tus compañeros de buceo, enlaces a sitios web, datos personales y de emergencia, preferencias de idioma y tema. Estos datos se escriben en una base de datos local y en archivos dentro del área reservada de la aplicación en el dispositivo. <strong>No se envían ni al desarrollador ni a terceros.</strong></p>
+
+    <h3>3. Permisos solicitados y su motivo</h3>
+    <ul>
+      <li><strong>Ubicación (GPS)</strong> — se utiliza únicamente cuando pulsas el botón para introducir la posición actual de un centro o un punto de inmersión. Las coordenadas obtenidas se escriben en la ficha y permanecen en el dispositivo. La aplicación no accede a la ubicación cuando está cerrada o en segundo plano.</li>
+      <li><strong>Notificaciones</strong> — sirven para avisarte de la próxima caducidad de un documento. Las notificaciones las genera localmente el teléfono: ningún dato sale del dispositivo.</li>
+      <li><strong>Cámara y selección de archivos</strong> — para adjuntar fotografías o documentos PDF a tus fichas. Las imágenes elegidas se copian en el área reservada de la aplicación.</li>
+      <li><strong>Arranque del dispositivo</strong> — sirve solamente para reprogramar los recordatorios de caducidad tras reiniciar el teléfono.</li>
+    </ul>
+
+    <h3>4. Copias de seguridad y exportaciones</h3>
+    <p>La aplicación puede crear un archivo de copia de seguridad de tus datos y un documento PDF de tu cuaderno de buceo. Estos archivos se generan en el dispositivo y eres tú quien decide si los envías y a quién. El desarrollador no los recibe ni tiene acceso a ellos.</p>
+
+    <h3>5. Servicios de terceros</h3>
+    <p>La aplicación no incorpora publicidad, herramientas de análisis, sistemas de acceso mediante redes sociales ni otros servicios externos. Cuando tocas un enlace a un sitio web, un número de teléfono, una dirección de correo o una ubicación en el mapa, sales de la aplicación y se aplican las condiciones de la aplicación o del sitio que se abre.</p>
+
+    <h3>6. Menores</h3>
+    <p>La aplicación no está dirigida a menores de 13 años y en ningún caso recoge datos de ningún usuario.</p>
+
+    <h3>7. Eliminación de los datos</h3>
+    <p>Puedes eliminar tus datos en cualquier momento desde los ajustes de la aplicación, o desinstalándola: la desinstalación elimina la base de datos local y todos los adjuntos.</p>
+
+    <h3>8. Modificaciones de esta política</h3>
+    <p>Cualquier modificación se publicará en esta misma página, indicando de forma visible la fecha de actualización.</p>
+
+    <h3>9. Contacto</h3>
+    <p>Para cualquier consulta relativa a esta política: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <p class="data">Última actualización: 7 de agosto de 2026</p>
+  </section>
+
+  <!-- =============================== FRANÇAIS ============================= -->
+  <section id="fr" lang="fr">
+    <h2>Politique de confidentialité</h2>
+    <div class="sintesi"><p><strong>Nautilus DiveKit ne collecte, ne transmet et ne partage aucune donnée personnelle.</strong> Tout ce que tu saisis reste sur ton appareil. L'application ne demande aucun compte, n'affiche aucune publicité, n'utilise aucun outil de statistique ou de suivi et ne communique avec aucun serveur.</p></div>
+
+    <h3>1. Qui traite les données</h3>
+    <p>L'application est développée par Fabio Sgambaro. Pour toute question : <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <h3>2. Quelles informations l'application gère, et où elles restent</h3>
+    <p>L'application enregistre sur le téléphone les informations que tu saisis : plongées, brevets et certificats, listes de matériel, centres et sites de plongée, contacts de tes binômes, liens vers des sites, données personnelles et d'urgence, préférences de langue et de thème. Ces données sont écrites dans une base de données locale et dans des fichiers situés dans l'espace réservé de l'application sur l'appareil. <strong>Elles ne sont envoyées ni au développeur ni à des tiers.</strong></p>
+
+    <h3>3. Autorisations demandées et leur raison</h3>
+    <ul>
+      <li><strong>Localisation (GPS)</strong> — utilisée uniquement lorsque tu appuies sur le bouton permettant de renseigner la position actuelle d'un centre ou d'un site de plongée. Les coordonnées obtenues sont inscrites dans la fiche et restent sur l'appareil. L'application n'accède pas à la position lorsqu'elle est fermée ou en arrière-plan.</li>
+      <li><strong>Notifications</strong> — servent à te prévenir de l'expiration prochaine d'un document. Les notifications sont générées localement par le téléphone : aucune donnée ne quitte l'appareil.</li>
+      <li><strong>Appareil photo et sélection de fichiers</strong> — pour joindre des photos ou des documents PDF à tes fiches. Les images choisies sont copiées dans l'espace réservé de l'application.</li>
+      <li><strong>Démarrage de l'appareil</strong> — sert uniquement à reprogrammer les rappels d'expiration après le redémarrage du téléphone.</li>
+    </ul>
+
+    <h3>4. Sauvegardes et exportations</h3>
+    <p>L'application peut créer un fichier de sauvegarde de tes données ainsi qu'un document PDF de ton carnet de plongée. Ces fichiers sont générés sur l'appareil et c'est toi qui décides si tu les envoies et à qui. Le développeur ne les reçoit pas et n'y a pas accès.</p>
+
+    <h3>5. Services tiers</h3>
+    <p>L'application n'intègre ni publicité, ni outils d'analyse, ni connexion via les réseaux sociaux, ni aucun autre service externe. Lorsque tu touches un lien vers un site, un numéro de téléphone, une adresse e-mail ou une position sur une carte, tu quittes l'application et les conditions de l'application ou du site qui s'ouvre s'appliquent.</p>
+
+    <h3>6. Mineurs</h3>
+    <p>L'application ne s'adresse pas aux enfants de moins de 13 ans et ne collecte de toute façon aucune donnée d'aucun utilisateur.</p>
+
+    <h3>7. Suppression des données</h3>
+    <p>Tu peux supprimer tes données à tout moment depuis les réglages de l'application, ou en la désinstallant : la désinstallation supprime la base de données locale et toutes les pièces jointes.</p>
+
+    <h3>8. Modifications de cette politique</h3>
+    <p>Toute modification sera publiée sur cette même page, avec la date de mise à jour bien visible.</p>
+
+    <h3>9. Contact</h3>
+    <p>Pour toute question relative à cette politique : <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <p class="data">Dernière mise à jour : 7 août 2026</p>
+  </section>
+
+  <!-- =============================== DEUTSCH ============================== -->
+  <section id="de" lang="de">
+    <h2>Datenschutzerklärung</h2>
+    <div class="sintesi"><p><strong>Nautilus DiveKit erhebt, übermittelt und teilt keinerlei personenbezogene Daten.</strong> Alles, was du eingibst, bleibt auf deinem Gerät. Die App verlangt kein Konto, zeigt keine Werbung, verwendet keine Analyse- oder Tracking-Werkzeuge und kommuniziert mit keinem Server.</p></div>
+
+    <h3>1. Wer die Daten verarbeitet</h3>
+    <p>Die App wird von Fabio Sgambaro entwickelt. Bei Fragen: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <h3>2. Welche Daten die App verarbeitet und wo sie bleiben</h3>
+    <p>Die App speichert auf dem Telefon die Angaben, die du selbst einträgst: Tauchgänge, Brevets und Dokumente, Ausrüstungslisten, Tauchbasen und Tauchplätze, Kontakte deiner Tauchpartner, Links zu Webseiten, persönliche Daten und Notfallkontakte, Sprach- und Design-Einstellungen. Diese Daten werden in eine lokale Datenbank und in Dateien im geschützten Bereich der App auf dem Gerät geschrieben. <strong>Sie werden weder an den Entwickler noch an Dritte übermittelt.</strong></p>
+
+    <h3>3. Angeforderte Berechtigungen und ihr Zweck</h3>
+    <ul>
+      <li><strong>Standort (GPS)</strong> — wird nur verwendet, wenn du die Schaltfläche zum Eintragen der aktuellen Position einer Tauchbasis oder eines Tauchplatzes antippst. Die ermittelten Koordinaten werden in den Eintrag geschrieben und bleiben auf dem Gerät. Die App greift nicht auf den Standort zu, wenn sie geschlossen ist oder im Hintergrund läuft.</li>
+      <li><strong>Benachrichtigungen</strong> — dienen dazu, dich auf den bevorstehenden Ablauf eines Dokuments hinzuweisen. Die Benachrichtigungen werden lokal vom Telefon erzeugt: Es verlassen keine Daten das Gerät.</li>
+      <li><strong>Kamera und Dateiauswahl</strong> — um Fotos oder PDF-Dokumente an deine Einträge anzuhängen. Ausgewählte Bilder werden in den geschützten Bereich der App kopiert.</li>
+      <li><strong>Gerätestart</strong> — dient ausschließlich dazu, die Ablauf-Erinnerungen nach einem Neustart des Telefons wieder einzuplanen.</li>
+    </ul>
+
+    <h3>4. Sicherungen und Exporte</h3>
+    <p>Die App kann eine Sicherungsdatei deiner Daten sowie ein PDF deines Tauchbuchs erstellen. Diese Dateien entstehen auf dem Gerät, und du allein entscheidest, ob und an wen du sie sendest. Der Entwickler erhält sie nicht und hat keinen Zugriff darauf.</p>
+
+    <h3>5. Dienste Dritter</h3>
+    <p>Die App enthält keine Werbung, keine Analysewerkzeuge, keine Anmeldung über soziale Netzwerke und keine sonstigen externen Dienste. Wenn du einen Link zu einer Webseite, eine Telefonnummer, eine E-Mail-Adresse oder einen Kartenstandort antippst, verlässt du die App; es gelten dann die Bedingungen der Anwendung oder Webseite, die sich öffnet.</p>
+
+    <h3>6. Kinder</h3>
+    <p>Die App richtet sich nicht an Kinder unter 13 Jahren und erhebt ohnehin von keinem Nutzer Daten.</p>
+
+    <h3>7. Löschen der Daten</h3>
+    <p>Du kannst deine Daten jederzeit in den Einstellungen der App löschen oder die App deinstallieren: Beim Deinstallieren werden die lokale Datenbank und alle Anhänge entfernt.</p>
+
+    <h3>8. Änderungen dieser Erklärung</h3>
+    <p>Etwaige Änderungen werden auf dieser Seite veröffentlicht, mit deutlich sichtbarem Aktualisierungsdatum.</p>
+
+    <h3>9. Kontakt</h3>
+    <p>Bei Fragen zu dieser Erklärung: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <p class="data">Letzte Aktualisierung: 7. August 2026</p>
+  </section>
+
+  <!-- ============================== PORTUGUÊS ============================= -->
+  <section id="pt" lang="pt">
+    <h2>Política de privacidade</h2>
+    <div class="sintesi"><p><strong>O Nautilus DiveKit não recolhe, não transmite nem partilha qualquer dado pessoal.</strong> Tudo o que introduzes fica no teu dispositivo. A aplicação não exige a criação de uma conta, não mostra publicidade, não usa ferramentas de estatística ou de rastreio e não comunica com nenhum servidor.</p></div>
+
+    <h3>1. Quem trata os dados</h3>
+    <p>A aplicação é desenvolvida por Fabio Sgambaro. Para qualquer questão: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <h3>2. Que informações a aplicação gere e onde ficam</h3>
+    <p>A aplicação guarda no telemóvel as informações que introduzes: mergulhos, brevês e certificados, listas de equipamento, centros e pontos de mergulho, contactos dos teus companheiros de mergulho, ligações para sites, dados pessoais e de emergência, preferências de língua e tema. Estes dados são escritos numa base de dados local e em ficheiros dentro da área reservada da aplicação no dispositivo. <strong>Não são enviados nem ao programador nem a terceiros.</strong></p>
+
+    <h3>3. Permissões pedidas e a sua razão</h3>
+    <ul>
+      <li><strong>Localização (GPS)</strong> — utilizada apenas quando carregas no botão para introduzir a posição atual de um centro ou ponto de mergulho. As coordenadas obtidas são escritas na ficha e ficam no dispositivo. A aplicação não acede à localização quando está fechada ou em segundo plano.</li>
+      <li><strong>Notificações</strong> — servem para te avisar de que um documento está prestes a caducar. As notificações são geradas localmente pelo telemóvel: nenhum dado sai do dispositivo.</li>
+      <li><strong>Câmara e seleção de ficheiros</strong> — para anexar fotografias ou documentos PDF às tuas fichas. As imagens escolhidas são copiadas para a área reservada da aplicação.</li>
+      <li><strong>Arranque do dispositivo</strong> — serve unicamente para reprogramar os lembretes de validade depois de reiniciar o telemóvel.</li>
+    </ul>
+
+    <h3>4. Cópias de segurança e exportações</h3>
+    <p>A aplicação pode criar um ficheiro de cópia de segurança dos teus dados e um documento PDF do teu diário de mergulho. Estes ficheiros são gerados no dispositivo e és tu que decides se os envias e a quem. O programador não os recebe nem tem acesso a eles.</p>
+
+    <h3>5. Serviços de terceiros</h3>
+    <p>A aplicação não integra publicidade, ferramentas de análise, sistemas de início de sessão através de redes sociais nem outros serviços externos. Quando tocas numa ligação para um site, num número de telefone, num endereço de email ou numa localização no mapa, sais da aplicação e aplicam-se as condições da aplicação ou do site que se abre.</p>
+
+    <h3>6. Menores</h3>
+    <p>A aplicação não se dirige a menores de 13 anos e, em qualquer caso, não recolhe dados de nenhum utilizador.</p>
+
+    <h3>7. Eliminação dos dados</h3>
+    <p>Podes eliminar os teus dados a qualquer momento nas definições da aplicação, ou desinstalando-a: a desinstalação remove a base de dados local e todos os anexos.</p>
+
+    <h3>8. Alterações a esta política</h3>
+    <p>Quaisquer alterações serão publicadas nesta mesma página, com a data de atualização bem visível.</p>
+
+    <h3>9. Contacto</h3>
+    <p>Para qualquer questão relativa a esta política: <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>.</p>
+
+    <p class="data">Última atualização: 7 de agosto de 2026</p>
+  </section>
 </div>
 
 <script>
-const AGGIORNATO = "2026-08-07";
+// Il testo delle sei lingue e' gia' tutto nella pagina: qui si nasconde
+// semplicemente quello che non serve. Senza JavaScript restano visibili tutte
+// le lingue una sotto l'altra, quindi l'informativa e' leggibile comunque -
+// anche dai controlli automatici che non eseguono gli script.
+(function () {
+  var LINGUE = ["it", "en", "es", "fr", "de", "pt"];
+  document.body.classList.add("js");
 
-const T = {
-  it: {
-    nome:"Italiano", titolo:"Informativa sulla privacy",
-    aggiornato:"Ultimo aggiornamento",
-    sintesi:"<strong>Nautilus DiveKit non raccoglie, non trasmette e non condivide alcun dato personale.</strong> Tutto ciò che inserisci resta sul tuo dispositivo. L'app non richiede la creazione di un account, non mostra pubblicità, non usa strumenti di statistica o di tracciamento e non comunica con alcun server.",
-    sezioni:[
-      ["Chi tratta i dati","L'applicazione è sviluppata da Fabio Sgambaro. Per qualsiasi domanda: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."],
-      ["Quali informazioni gestisce l'app e dove restano","L'app salva sul telefono le informazioni che inserisci tu: immersioni, brevetti e certificati, liste di attrezzatura, centri e punti di immersione, contatti dei compagni di immersione, collegamenti a siti, dati personali e di emergenza, preferenze di lingua e tema. Questi dati vengono scritti in una banca dati locale e in file all'interno dell'area riservata dell'app sul dispositivo. <strong>Non vengono inviati né allo sviluppatore né a terze parti.</strong>"],
-      ["Permessi richiesti e loro motivo","<ul><li><strong>Posizione (GPS)</strong> — utilizzata soltanto quando premi il pulsante per inserire la posizione attuale di un centro o di un punto di immersione. Le coordinate ottenute vengono scritte nella scheda e restano sul dispositivo. L'app non accede alla posizione quando è chiusa o in secondo piano.</li><li><strong>Notifiche</strong> — servono ad avvisarti dell'imminente scadenza di un documento. Le notifiche sono generate localmente dal telefono: nessun dato esce dal dispositivo.</li><li><strong>Fotocamera e selezione di file</strong> — per allegare fotografie o documenti PDF alle tue schede. Le immagini scelte vengono copiate nell'area riservata dell'app.</li><li><strong>Avvio del dispositivo</strong> — serve unicamente a riprogrammare i promemoria di scadenza dopo il riavvio del telefono.</li></ul>"],
-      ["Backup ed esportazioni","L'app può creare un file di backup dei tuoi dati e un documento PDF del logbook. Questi file vengono generati sul dispositivo e sei tu a decidere se e a chi inviarli. Lo sviluppatore non li riceve e non vi ha accesso."],
-      ["Servizi di terze parti","L'app non integra pubblicità, strumenti di analisi, sistemi di accesso tramite social network né altri servizi esterni. Quando tocchi un collegamento a un sito, un numero di telefono, un indirizzo email o una posizione sulle mappe, esci dall'app e si applicano le condizioni dell'applicazione o del sito che si apre."],
-      ["Minori","L'app non è rivolta a minori di 13 anni e in ogni caso non raccoglie dati da alcun utente."],
-      ["Cancellazione dei dati","Puoi cancellare i tuoi dati in qualsiasi momento dalle impostazioni dell'app, oppure disinstallandola: la disinstallazione rimuove la banca dati locale e tutti gli allegati."],
-      ["Modifiche a questa informativa","Eventuali modifiche saranno pubblicate su questa stessa pagina, con la data di aggiornamento in evidenza."],
-      ["Contatti","Per qualunque domanda relativa a questa informativa: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."]
-    ]
-  },
-  en: {
-    nome:"English", titolo:"Privacy Policy",
-    aggiornato:"Last updated",
-    sintesi:"<strong>Nautilus DiveKit does not collect, transmit or share any personal data.</strong> Everything you enter stays on your device. The app requires no account, shows no advertising, uses no analytics or tracking tools, and communicates with no server.",
-    sezioni:[
-      ["Who processes the data","The application is developed by Fabio Sgambaro. For any question: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."],
-      ["What the app handles, and where it stays","The app stores on your phone the information you enter: dives, certifications and documents, gear checklists, dive centres and dive sites, contacts of your dive buddies, website links, personal and emergency details, language and theme preferences. This data is written to a local database and to files inside the app's private storage on the device. <strong>It is never sent to the developer or to any third party.</strong>"],
-      ["Permissions and why they are needed","<ul><li><strong>Location (GPS)</strong> — used only when you tap the button to fill in the current position of a dive centre or dive site. The coordinates are written into the entry and stay on the device. The app does not access your location when closed or in the background.</li><li><strong>Notifications</strong> — used to warn you that a document is about to expire. Notifications are generated locally by the phone: no data leaves the device.</li><li><strong>Camera and file selection</strong> — to attach photos or PDF documents to your entries. Selected images are copied into the app's private storage.</li><li><strong>Device boot</strong> — used solely to reschedule expiry reminders after the phone restarts.</li></ul>"],
-      ["Backups and exports","The app can create a backup file of your data and a PDF of your logbook. These files are generated on your device and it is entirely up to you whether and to whom you send them. The developer neither receives them nor has access to them."],
-      ["Third-party services","The app includes no advertising, no analytics, no social sign-in and no other external services. When you tap a website link, a phone number, an email address or a location on a map, you leave the app and the terms of the application or website that opens will apply."],
-      ["Children","The app is not directed at children under 13 and in any case collects no data from any user."],
-      ["Deleting your data","You can delete your data at any time from the app's settings, or by uninstalling the app: uninstalling removes the local database and all attachments."],
-      ["Changes to this policy","Any changes will be published on this same page, with the update date shown clearly."],
-      ["Contact","For any question about this policy: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."]
-    ]
-  },
-  es: {
-    nome:"Español", titolo:"Política de privacidad",
-    aggiornato:"Última actualización",
-    sintesi:"<strong>Nautilus DiveKit no recoge, no transmite ni comparte ningún dato personal.</strong> Todo lo que introduces permanece en tu dispositivo. La aplicación no requiere crear una cuenta, no muestra publicidad, no utiliza herramientas de estadística o de seguimiento y no se comunica con ningún servidor.",
-    sezioni:[
-      ["Quién trata los datos","La aplicación está desarrollada por Fabio Sgambaro. Para cualquier consulta: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."],
-      ["Qué información gestiona la aplicación y dónde permanece","La aplicación guarda en el teléfono la información que introduces tú: inmersiones, titulaciones y certificados, listas de equipo, centros y puntos de inmersión, contactos de tus compañeros de buceo, enlaces a sitios web, datos personales y de emergencia, preferencias de idioma y tema. Estos datos se escriben en una base de datos local y en archivos dentro del área reservada de la aplicación en el dispositivo. <strong>No se envían ni al desarrollador ni a terceros.</strong>"],
-      ["Permisos solicitados y su motivo","<ul><li><strong>Ubicación (GPS)</strong> — se utiliza únicamente cuando pulsas el botón para introducir la posición actual de un centro o un punto de inmersión. Las coordenadas obtenidas se escriben en la ficha y permanecen en el dispositivo. La aplicación no accede a la ubicación cuando está cerrada o en segundo plano.</li><li><strong>Notificaciones</strong> — sirven para avisarte de la próxima caducidad de un documento. Las notificaciones las genera localmente el teléfono: ningún dato sale del dispositivo.</li><li><strong>Cámara y selección de archivos</strong> — para adjuntar fotografías o documentos PDF a tus fichas. Las imágenes elegidas se copian en el área reservada de la aplicación.</li><li><strong>Arranque del dispositivo</strong> — sirve solamente para reprogramar los recordatorios de caducidad tras reiniciar el teléfono.</li></ul>"],
-      ["Copias de seguridad y exportaciones","La aplicación puede crear un archivo de copia de seguridad de tus datos y un documento PDF de tu cuaderno de buceo. Estos archivos se generan en el dispositivo y eres tú quien decide si los envías y a quién. El desarrollador no los recibe ni tiene acceso a ellos."],
-      ["Servicios de terceros","La aplicación no incorpora publicidad, herramientas de análisis, sistemas de acceso mediante redes sociales ni otros servicios externos. Cuando tocas un enlace a un sitio web, un número de teléfono, una dirección de correo o una ubicación en el mapa, sales de la aplicación y se aplican las condiciones de la aplicación o del sitio que se abre."],
-      ["Menores","La aplicación no está dirigida a menores de 13 años y en ningún caso recoge datos de ningún usuario."],
-      ["Eliminación de los datos","Puedes eliminar tus datos en cualquier momento desde los ajustes de la aplicación, o desinstalándola: la desinstalación elimina la base de datos local y todos los adjuntos."],
-      ["Modificaciones de esta política","Cualquier modificación se publicará en esta misma página, indicando de forma visible la fecha de actualización."],
-      ["Contacto","Para cualquier consulta relativa a esta política: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."]
-    ]
-  },
-  fr: {
-    nome:"Français", titolo:"Politique de confidentialité",
-    aggiornato:"Dernière mise à jour",
-    sintesi:"<strong>Nautilus DiveKit ne collecte, ne transmet et ne partage aucune donnée personnelle.</strong> Tout ce que tu saisis reste sur ton appareil. L'application ne demande aucun compte, n'affiche aucune publicité, n'utilise aucun outil de statistique ou de suivi et ne communique avec aucun serveur.",
-    sezioni:[
-      ["Qui traite les données","L'application est développée par Fabio Sgambaro. Pour toute question : <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."],
-      ["Quelles informations l'application gère, et où elles restent","L'application enregistre sur le téléphone les informations que tu saisis : plongées, brevets et certificats, listes de matériel, centres et sites de plongée, contacts de tes binômes, liens vers des sites, données personnelles et d'urgence, préférences de langue et de thème. Ces données sont écrites dans une base de données locale et dans des fichiers situés dans l'espace réservé de l'application sur l'appareil. <strong>Elles ne sont envoyées ni au développeur ni à des tiers.</strong>"],
-      ["Autorisations demandées et leur raison","<ul><li><strong>Localisation (GPS)</strong> — utilisée uniquement lorsque tu appuies sur le bouton permettant de renseigner la position actuelle d'un centre ou d'un site de plongée. Les coordonnées obtenues sont inscrites dans la fiche et restent sur l'appareil. L'application n'accède pas à la position lorsqu'elle est fermée ou en arrière-plan.</li><li><strong>Notifications</strong> — servent à te prévenir de l'expiration prochaine d'un document. Les notifications sont générées localement par le téléphone : aucune donnée ne quitte l'appareil.</li><li><strong>Appareil photo et sélection de fichiers</strong> — pour joindre des photos ou des documents PDF à tes fiches. Les images choisies sont copiées dans l'espace réservé de l'application.</li><li><strong>Démarrage de l'appareil</strong> — sert uniquement à reprogrammer les rappels d'expiration après le redémarrage du téléphone.</li></ul>"],
-      ["Sauvegardes et exportations","L'application peut créer un fichier de sauvegarde de tes données ainsi qu'un document PDF de ton carnet de plongée. Ces fichiers sont générés sur l'appareil et c'est toi qui décides si tu les envoies et à qui. Le développeur ne les reçoit pas et n'y a pas accès."],
-      ["Services tiers","L'application n'intègre ni publicité, ni outils d'analyse, ni connexion via les réseaux sociaux, ni aucun autre service externe. Lorsque tu touches un lien vers un site, un numéro de téléphone, une adresse e-mail ou une position sur une carte, tu quittes l'application et les conditions de l'application ou du site qui s'ouvre s'appliquent."],
-      ["Mineurs","L'application ne s'adresse pas aux enfants de moins de 13 ans et ne collecte de toute façon aucune donnée d'aucun utilisateur."],
-      ["Suppression des données","Tu peux supprimer tes données à tout moment depuis les réglages de l'application, ou en la désinstallant : la désinstallation supprime la base de données locale et toutes les pièces jointes."],
-      ["Modifications de cette politique","Toute modification sera publiée sur cette même page, avec la date de mise à jour bien visible."],
-      ["Contact","Pour toute question relative à cette politique : <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."]
-    ]
-  },
-  de: {
-    nome:"Deutsch", titolo:"Datenschutzerklärung",
-    aggiornato:"Letzte Aktualisierung",
-    sintesi:"<strong>Nautilus DiveKit erhebt, übermittelt und teilt keinerlei personenbezogene Daten.</strong> Alles, was du eingibst, bleibt auf deinem Gerät. Die App verlangt kein Konto, zeigt keine Werbung, verwendet keine Analyse- oder Tracking-Werkzeuge und kommuniziert mit keinem Server.",
-    sezioni:[
-      ["Wer die Daten verarbeitet","Die App wird von Fabio Sgambaro entwickelt. Bei Fragen: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."],
-      ["Welche Daten die App verarbeitet und wo sie bleiben","Die App speichert auf dem Telefon die Angaben, die du selbst einträgst: Tauchgänge, Brevets und Dokumente, Ausrüstungslisten, Tauchbasen und Tauchplätze, Kontakte deiner Tauchpartner, Links zu Webseiten, persönliche Daten und Notfallkontakte, Sprach- und Design-Einstellungen. Diese Daten werden in eine lokale Datenbank und in Dateien im geschützten Bereich der App auf dem Gerät geschrieben. <strong>Sie werden weder an den Entwickler noch an Dritte übermittelt.</strong>"],
-      ["Angeforderte Berechtigungen und ihr Zweck","<ul><li><strong>Standort (GPS)</strong> — wird nur verwendet, wenn du die Schaltfläche zum Eintragen der aktuellen Position einer Tauchbasis oder eines Tauchplatzes antippst. Die ermittelten Koordinaten werden in den Eintrag geschrieben und bleiben auf dem Gerät. Die App greift nicht auf den Standort zu, wenn sie geschlossen ist oder im Hintergrund läuft.</li><li><strong>Benachrichtigungen</strong> — dienen dazu, dich auf den bevorstehenden Ablauf eines Dokuments hinzuweisen. Die Benachrichtigungen werden lokal vom Telefon erzeugt: Es verlassen keine Daten das Gerät.</li><li><strong>Kamera und Dateiauswahl</strong> — um Fotos oder PDF-Dokumente an deine Einträge anzuhängen. Ausgewählte Bilder werden in den geschützten Bereich der App kopiert.</li><li><strong>Gerätestart</strong> — dient ausschließlich dazu, die Ablauf-Erinnerungen nach einem Neustart des Telefons wieder einzuplanen.</li></ul>"],
-      ["Sicherungen und Exporte","Die App kann eine Sicherungsdatei deiner Daten sowie ein PDF deines Tauchbuchs erstellen. Diese Dateien entstehen auf dem Gerät, und du allein entscheidest, ob und an wen du sie sendest. Der Entwickler erhält sie nicht und hat keinen Zugriff darauf."],
-      ["Dienste Dritter","Die App enthält keine Werbung, keine Analysewerkzeuge, keine Anmeldung über soziale Netzwerke und keine sonstigen externen Dienste. Wenn du einen Link zu einer Webseite, eine Telefonnummer, eine E-Mail-Adresse oder einen Kartenstandort antippst, verlässt du die App; es gelten dann die Bedingungen der Anwendung oder Webseite, die sich öffnet."],
-      ["Kinder","Die App richtet sich nicht an Kinder unter 13 Jahren und erhebt ohnehin von keinem Nutzer Daten."],
-      ["Löschen der Daten","Du kannst deine Daten jederzeit in den Einstellungen der App löschen oder die App deinstallieren: Beim Deinstallieren werden die lokale Datenbank und alle Anhänge entfernt."],
-      ["Änderungen dieser Erklärung","Etwaige Änderungen werden auf dieser Seite veröffentlicht, mit deutlich sichtbarem Aktualisierungsdatum."],
-      ["Kontakt","Bei Fragen zu dieser Erklärung: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."]
-    ]
-  },
-  pt: {
-    nome:"Português", titolo:"Política de privacidade",
-    aggiornato:"Última atualização",
-    sintesi:"<strong>O Nautilus DiveKit não recolhe, não transmite nem partilha qualquer dado pessoal.</strong> Tudo o que introduzes fica no teu dispositivo. A aplicação não exige a criação de uma conta, não mostra publicidade, não usa ferramentas de estatística ou de rastreio e não comunica com nenhum servidor.",
-    sezioni:[
-      ["Quem trata os dados","A aplicação é desenvolvida por Fabio Sgambaro. Para qualquer questão: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."],
-      ["Que informações a aplicação gere e onde ficam","A aplicação guarda no telemóvel as informações que introduzes: mergulhos, brevês e certificados, listas de equipamento, centros e pontos de mergulho, contactos dos teus companheiros de mergulho, ligações para sites, dados pessoais e de emergência, preferências de língua e tema. Estes dados são escritos numa base de dados local e em ficheiros dentro da área reservada da aplicação no dispositivo. <strong>Não são enviados nem ao programador nem a terceiros.</strong>"],
-      ["Permissões pedidas e a sua razão","<ul><li><strong>Localização (GPS)</strong> — utilizada apenas quando carregas no botão para introduzir a posição atual de um centro ou ponto de mergulho. As coordenadas obtidas são escritas na ficha e ficam no dispositivo. A aplicação não acede à localização quando está fechada ou em segundo plano.</li><li><strong>Notificações</strong> — servem para te avisar de que um documento está prestes a caducar. As notificações são geradas localmente pelo telemóvel: nenhum dado sai do dispositivo.</li><li><strong>Câmara e seleção de ficheiros</strong> — para anexar fotografias ou documentos PDF às tuas fichas. As imagens escolhidas são copiadas para a área reservada da aplicação.</li><li><strong>Arranque do dispositivo</strong> — serve unicamente para reprogramar os lembretes de validade depois de reiniciar o telemóvel.</li></ul>"],
-      ["Cópias de segurança e exportações","A aplicação pode criar um ficheiro de cópia de segurança dos teus dados e um documento PDF do teu diário de mergulho. Estes ficheiros são gerados no dispositivo e és tu que decides se os envias e a quem. O programador não os recebe nem tem acesso a eles."],
-      ["Serviços de terceiros","A aplicação não integra publicidade, ferramentas de análise, sistemas de início de sessão através de redes sociais nem outros serviços externos. Quando tocas numa ligação para um site, num número de telefone, num endereço de email ou numa localização no mapa, sais da aplicação e aplicam-se as condições da aplicação ou do site que se abre."],
-      ["Menores","A aplicação não se dirige a menores de 13 anos e, em qualquer caso, não recolhe dados de nenhum utilizador."],
-      ["Eliminação dos dados","Podes eliminar os teus dados a qualquer momento nas definições da aplicação, ou desinstalando-a: a desinstalação remove a base de dados local e todos os anexos."],
-      ["Alterações a esta política","Quaisquer alterações serão publicadas nesta mesma página, com a data de atualização bem visível."],
-      ["Contacto","Para qualquer questão relativa a esta política: <a href='mailto:sgambaro.apps@gmail.com'>sgambaro.apps@gmail.com</a>."]
-    ]
+  function mostra(codice) {
+    if (LINGUE.indexOf(codice) === -1) { codice = "en"; }
+    LINGUE.forEach(function (c) {
+      document.getElementById(c).hidden = (c !== codice);
+    });
+    document.querySelectorAll("#lingue a").forEach(function (a) {
+      a.classList.toggle("attiva", a.dataset.lang === codice);
+    });
+    document.documentElement.lang = codice;
   }
-};
 
-const ORDINE = ["it","en","es","fr","de","pt"];
-
-function mostra(codice){
-  const t = T[codice];
-  document.documentElement.lang = codice;
-  document.title = "Nautilus DiveKit — " + t.titolo;
-  document.getElementById("sottotitolo").textContent = t.titolo;
-
-  let html = '<div class="sintesi"><p>' + t.sintesi + '</p></div>';
-  t.sezioni.forEach(function(s, i){
-    html += "<h2>" + (i + 1) + ". " + s[0] + "</h2>";
-    html += s[1].trim().startsWith("<ul") ? s[1] : "<p>" + s[1] + "</p>";
+  document.querySelectorAll("#lingue a").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      mostra(a.dataset.lang);
+      try { history.replaceState(null, "", "#" + a.dataset.lang); } catch (err) {}
+    });
   });
-  document.getElementById("contenuto").innerHTML = html;
-  document.getElementById("pie").textContent = t.aggiornato + ": " + AGGIORNATO;
 
-  document.querySelectorAll("#lingue button").forEach(function(b){
-    b.setAttribute("aria-current", b.dataset.lang === codice ? "true" : "false");
-  });
-  try { history.replaceState(null, "", "#" + codice); } catch (e) { /* file:// */ }
-}
-
-const nav = document.getElementById("lingue");
-ORDINE.forEach(function(c){
-  const b = document.createElement("button");
-  b.textContent = T[c].nome;
-  b.dataset.lang = c;
-  b.onclick = function(){ mostra(c); };
-  nav.appendChild(b);
-});
-
-// Lingua iniziale: quella chiesta nell'indirizzo, altrimenti quella del
-// browser se la conosciamo, altrimenti inglese.
-const daUrl = location.hash.replace("#", "");
-const daBrowser = (navigator.language || "en").slice(0, 2).toLowerCase();
-mostra(T[daUrl] ? daUrl : (T[daBrowser] ? daBrowser : "en"));
+  // Lingua iniziale: quella chiesta nell'indirizzo, altrimenti quella del
+  // browser se la conosciamo, altrimenti inglese.
+  var daUrl = location.hash.replace("#", "");
+  var daBrowser = (navigator.language || "en").slice(0, 2).toLowerCase();
+  mostra(LINGUE.indexOf(daUrl) !== -1 ? daUrl : daBrowser);
+})();
 </script>
 </body>
 </html>
