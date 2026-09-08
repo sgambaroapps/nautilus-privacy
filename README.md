@@ -1,12 +1,16 @@
-# Informativa sulla privacy di Nautilus DiveKit
+# Pagine pubbliche di Nautilus DiveKit
 
-Questo repository contiene **soltanto** l'informativa sulla privacy
-dell'applicazione Android **Nautilus DiveKit**, pubblicata all'indirizzo:
+Questo repository contiene **soltanto** le due pagine pubbliche
+dell'applicazione **Nautilus DiveKit** (Android e iOS):
 
-**https://sgambaroapps.github.io/nautilus-privacy/**
+- **Informativa sulla privacy** —
+  https://sgambaroapps.github.io/nautilus-privacy/
+- **Assistenza** —
+  https://sgambaroapps.github.io/nautilus-privacy/support.html
 
 È pubblico perché Google Play richiede che l'informativa sia raggiungibile da
-chiunque. Il codice sorgente dell'applicazione **non** si trova qui.
+chiunque, e l'App Store richiede in più un indirizzo di assistenza. Il codice
+sorgente dell'applicazione **non** si trova qui.
 
 La pagina si presenta nelle sei lingue dell'app — italiano, inglese, spagnolo,
 francese, tedesco e portoghese — scegliendo da sé quella del browser, con un
