@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nautilus DiveKit — Assistenza / Support</title>
+<meta name="description" content="Assistenza dell'app Nautilus DiveKit: come segnalare un problema, backup e cambio telefono, contatto diretto con lo sviluppatore.">
+<style>
+  /* Stesso foglio di stile della pagina privacy, tenuto qui in copia perche'
+     le due pagine restano indipendenti: index.html e' gia' pubblicata e
+     dichiarata su Play, meglio non toccarla per aggiungere questa. */
+  :root{
+    --fondo:#ffffff; --testo:#1a1a1a; --tenue:#5a6570;
+    --blu:#0b3c5d; --azzurro:#1b7aa6; --riquadro:#e8f4f9; --bordo:#d5e3ea;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --fondo:#12191f; --testo:#e8eef2; --tenue:#9fb0bd;
+      --blu:#8fc7e0; --azzurro:#5fb0d4; --riquadro:#16262f; --bordo:#2a3b47;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:0; background:var(--fondo); color:var(--testo);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:32px 20px 72px}
+  header{border-bottom:2px solid var(--bordo); padding-bottom:20px; margin-bottom:8px}
+  h1{color:var(--blu); font-size:1.7rem; margin:0 0 6px}
+  h2{color:var(--blu); font-size:1.25rem; margin:0 0 4px}
+  h3{color:var(--azzurro); font-size:1.1rem; margin:30px 0 10px}
+  p,li{margin:0 0 12px}
+  ul{padding-left:22px}
+  a{color:var(--azzurro)}
+  .sintesi{
+    background:var(--riquadro); border-left:4px solid var(--azzurro);
+    padding:16px 18px; border-radius:0 8px 8px 0; margin:18px 0 8px;
+  }
+  .sintesi p{margin:0}
+  .data{color:var(--tenue); font-size:.9rem; margin-top:36px;
+    padding-top:16px; border-top:1px solid var(--bordo)}
+  nav{display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 0}
+  nav a{
+    font-size:.9rem; text-decoration:none; padding:6px 14px;
+    border:1px solid var(--bordo); color:var(--tenue); border-radius:999px;
+  }
+  nav a:hover{border-color:var(--azzurro); color:var(--azzurro)}
+  nav a.attiva{background:var(--azzurro); border-color:var(--azzurro);
+    color:#fff; font-weight:600}
+  section{padding-top:22px}
+  /* Senza JavaScript si vedono tutte le lingue una sotto l'altra: il testo
+     resta comunque leggibile e completo. Con JS ne resta visibile una sola. */
+  body.js section[hidden]{display:none}
+  section + section{border-top:1px dashed var(--bordo); margin-top:30px}
+  body.js section + section{border-top:none; margin-top:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Nautilus DiveKit</h1>
+    <nav id="lingue">
+      <a href="#it" data-lang="it">Italiano</a>
+      <a href="#en" data-lang="en">English</a>
+      <a href="#es" data-lang="es">Español</a>
+      <a href="#fr" data-lang="fr">Français</a>
+      <a href="#de" data-lang="de">Deutsch</a>
+      <a href="#pt" data-lang="pt">Português</a>
+    </nav>
+  </header>
+
+  <!-- ============================== ITALIANO ============================== -->
+  <section id="it" lang="it">
+    <h2>Assistenza</h2>
+    <div class="sintesi"><p>Hai bisogno di aiuto, hai trovato un errore o vuoi proporre una funzione? Scrivi a <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>. Rispondo personalmente, di solito entro pochi giorni.</p></div>
+
+    <h3>Come segnalare un problema</h3>
+    <p>Manda una mail indicando il modello del telefono, la versione del sistema e la versione dell'app (Impostazioni → Info). Se puoi, allega uno screenshot: aiuta moltissimo a capire.</p>
+
+    <h3>I miei dati sono al sicuro?</h3>
+    <p>Restano sul tuo dispositivo: l'app non ha account, non comunica con alcun server e non raccoglie niente. Proprio per questo non esiste una copia nel cloud a cui attingere, quindi il backup è importante.</p>
+
+    <h3>Backup e cambio di telefono</h3>
+    <p>Impostazioni → Backup: scegli le sezioni da salvare e se includere le foto, e ottieni un solo file .zip da conservare dove vuoi. Sul telefono nuovo, Impostazioni → Ripristina e scegli quel file. Puoi unire i dati a quelli esistenti oppure sostituirli.</p>
+
+    <h3>Non ricevo gli avvisi di scadenza dei brevetti</h3>
+    <p>Controlla che le notifiche dell'app siano attive nelle impostazioni del telefono e che il documento abbia una data di scadenza. Il promemoria arriva alle 9 del mattino, con il preavviso scelto in Impostazioni.</p>
+
+    <h3>Posso cambiare lingua o unità di misura?</h3>
+    <p>Sì, da Impostazioni: sei lingue e sistema metrico o imperiale. Al primo avvio l'app parte nella lingua del telefono, se la conosce.</p>
+
+    <h3>I calcolatori sostituiscono il computer subacqueo?</h3>
+    <p>No, mai. Sono strumenti informativi: verifica sempre i risultati e immergiti nei limiti del tuo brevetto e della tua formazione. L'app non calcola la decompressione.</p>
+
+    <p><a href="./#it">Informativa sulla privacy</a></p>
+
+    <p class="data">Aggiornata l'8 settembre 2026</p>
+  </section>
+
+  <!-- ============================== ENGLISH =============================== -->
+  <section id="en" lang="en">
+    <h2>Support</h2>
+    <div class="sintesi"><p>Need help, found a bug or want to suggest a feature? Write to <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>. I answer personally, usually within a few days.</p></div>
+
+    <h3>How to report a problem</h3>
+    <p>Send an email with your device model, system version and app version (Settings → About). A screenshot helps a lot.</p>
+
+    <h3>Is my data safe?</h3>
+    <p>It stays on your device: the app has no account, talks to no server and collects nothing. That also means there is no cloud copy to fall back on, so the backup matters.</p>
+
+    <h3>Backup and moving to a new phone</h3>
+    <p>Settings → Backup: choose which sections to save and whether to include photos, and you get a single .zip file you can keep anywhere. On the new phone, Settings → Restore and pick that file. You can merge with existing data or replace it.</p>
+
+    <h3>I am not getting certification expiry reminders</h3>
+    <p>Check that notifications are enabled for the app in your device settings and that the document has an expiry date. The reminder arrives at 9 a.m., with the lead time you chose in Settings.</p>
+
+    <h3>Can I change language or units?</h3>
+    <p>Yes, in Settings: six languages and metric or imperial units. On first launch the app starts in your device language when it knows it.</p>
+
+    <h3>Do the calculators replace a dive computer?</h3>
+    <p>Never. They are informational tools: always double-check the results and dive within the limits of your training and certification. The app does not calculate decompression.</p>
+
+    <p><a href="./#en">Privacy policy</a></p>
+
+    <p class="data">Updated 8 September 2026</p>
+  </section>
+
+  <!-- ============================== ESPAÑOL =============================== -->
+  <section id="es" lang="es">
+    <h2>Asistencia</h2>
+    <div class="sintesi"><p>¿Necesitas ayuda, has encontrado un fallo o quieres proponer una función? Escribe a <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>. Respondo personalmente, normalmente en pocos días.</p></div>
+
+    <h3>Cómo comunicar un problema</h3>
+    <p>Envía un correo indicando el modelo del dispositivo, la versión del sistema y la de la aplicación (Ajustes → Información). Una captura de pantalla ayuda mucho.</p>
+
+    <h3>¿Mis datos están seguros?</h3>
+    <p>Permanecen en tu dispositivo: la aplicación no tiene cuenta, no se comunica con ningún servidor y no recoge nada. Por eso tampoco hay una copia en la nube, así que la copia de seguridad es importante.</p>
+
+    <h3>Copia de seguridad y cambio de teléfono</h3>
+    <p>Ajustes → Copia de seguridad: elige las secciones y si incluir las fotos, y obtienes un único archivo .zip. En el teléfono nuevo, Ajustes → Restaurar y selecciona ese archivo. Puedes fusionar los datos o sustituirlos.</p>
+
+    <h3>No recibo los avisos de caducidad</h3>
+    <p>Comprueba que las notificaciones estén activadas para la aplicación y que el documento tenga fecha de caducidad. El aviso llega a las 9 de la mañana, con la antelación elegida en Ajustes.</p>
+
+    <h3>¿Puedo cambiar el idioma o las unidades?</h3>
+    <p>Sí, en Ajustes: seis idiomas y sistema métrico o imperial. Al primer arranque la aplicación usa el idioma del dispositivo, si lo conoce.</p>
+
+    <h3>¿Las calculadoras sustituyen al ordenador de buceo?</h3>
+    <p>Nunca. Son herramientas informativas: verifica siempre los resultados y bucea dentro de los límites de tu formación y titulación. La aplicación no calcula la descompresión.</p>
+
+    <p><a href="./#es">Política de privacidad</a></p>
+
+    <p class="data">Actualizada el 8 de septiembre de 2026</p>
+  </section>
+
+  <!-- ============================== FRANÇAIS ============================== -->
+  <section id="fr" lang="fr">
+    <h2>Assistance</h2>
+    <div class="sintesi"><p>Besoin d'aide, un bug à signaler ou une fonction à proposer ? Écrivez à <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>. Je réponds personnellement, en général sous quelques jours.</p></div>
+
+    <h3>Comment signaler un problème</h3>
+    <p>Envoyez un courriel en indiquant le modèle de l'appareil, la version du système et celle de l'application (Réglages → À propos). Une capture d'écran aide beaucoup.</p>
+
+    <h3>Mes données sont-elles en sécurité ?</h3>
+    <p>Elles restent sur votre appareil : l'application n'a pas de compte, ne communique avec aucun serveur et ne collecte rien. Il n'existe donc pas de copie dans le cloud, d'où l'importance de la sauvegarde.</p>
+
+    <h3>Sauvegarde et changement de téléphone</h3>
+    <p>Réglages → Sauvegarde : choisissez les sections et si vous incluez les photos, et vous obtenez un seul fichier .zip. Sur le nouveau téléphone, Réglages → Restaurer et sélectionnez ce fichier. Vous pouvez fusionner les données ou les remplacer.</p>
+
+    <h3>Je ne reçois pas les rappels d'expiration</h3>
+    <p>Vérifiez que les notifications sont autorisées pour l'application et que le document a une date d'expiration. Le rappel arrive à 9 h, avec le délai choisi dans les Réglages.</p>
+
+    <h3>Puis-je changer la langue ou les unités ?</h3>
+    <p>Oui, dans les Réglages : six langues et système métrique ou impérial. Au premier lancement l'application utilise la langue de l'appareil, si elle la connaît.</p>
+
+    <h3>Les calculateurs remplacent-ils un ordinateur de plongée ?</h3>
+    <p>Jamais. Ce sont des outils d'information : vérifiez toujours les résultats et plongez dans les limites de votre formation et de votre brevet. L'application ne calcule pas la décompression.</p>
+
+    <p><a href="./#fr">Politique de confidentialité</a></p>
+
+    <p class="data">Mise à jour le 8 septembre 2026</p>
+  </section>
+
+  <!-- ============================== DEUTSCH =============================== -->
+  <section id="de" lang="de">
+    <h2>Hilfe</h2>
+    <div class="sintesi"><p>Brauchst du Hilfe, hast du einen Fehler gefunden oder einen Vorschlag? Schreib an <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>. Ich antworte persönlich, meist innerhalb weniger Tage.</p></div>
+
+    <h3>Ein Problem melden</h3>
+    <p>Schreib eine E-Mail mit Gerätemodell, Systemversion und App-Version (Einstellungen → Info). Ein Screenshot hilft sehr.</p>
+
+    <h3>Sind meine Daten sicher?</h3>
+    <p>Sie bleiben auf deinem Gerät: Die App hat kein Konto, spricht mit keinem Server und erhebt nichts. Deshalb gibt es aber auch keine Kopie in der Cloud — die Sicherung ist also wichtig.</p>
+
+    <h3>Sicherung und Wechsel des Telefons</h3>
+    <p>Einstellungen → Sicherung: Wähle die Bereiche und ob Fotos mitsollen, und du erhältst eine einzige .zip-Datei. Auf dem neuen Telefon: Einstellungen → Wiederherstellen und diese Datei wählen. Du kannst zusammenführen oder ersetzen.</p>
+
+    <h3>Ich bekomme keine Ablauferinnerungen</h3>
+    <p>Prüfe, ob Mitteilungen für die App erlaubt sind und ob das Dokument ein Ablaufdatum hat. Die Erinnerung kommt um 9 Uhr, mit der in den Einstellungen gewählten Vorlaufzeit.</p>
+
+    <h3>Kann ich Sprache oder Einheiten ändern?</h3>
+    <p>Ja, in den Einstellungen: sechs Sprachen und metrische oder imperiale Einheiten. Beim ersten Start nutzt die App die Sprache des Geräts, wenn sie diese kennt.</p>
+
+    <h3>Ersetzen die Rechner einen Tauchcomputer?</h3>
+    <p>Niemals. Es sind reine Informationswerkzeuge: Prüfe die Ergebnisse immer und tauche in den Grenzen deiner Ausbildung und deines Brevets. Die App berechnet keine Dekompression.</p>
+
+    <p><a href="./#de">Datenschutzerklärung</a></p>
+
+    <p class="data">Aktualisiert am 8. September 2026</p>
+  </section>
+
+  <!-- ============================== PORTUGUÊS ============================= -->
+  <section id="pt" lang="pt">
+    <h2>Apoio</h2>
+    <div class="sintesi"><p>Precisas de ajuda, encontraste um erro ou queres sugerir uma funcionalidade? Escreve para <a href="mailto:sgambaro.apps@gmail.com">sgambaro.apps@gmail.com</a>. Respondo pessoalmente, normalmente em poucos dias.</p></div>
+
+    <h3>Como comunicar um problema</h3>
+    <p>Envia um e-mail indicando o modelo do dispositivo, a versão do sistema e a da aplicação (Definições → Informações). Uma captura de ecrã ajuda muito.</p>
+
+    <h3>Os meus dados estão seguros?</h3>
+    <p>Ficam no teu dispositivo: a aplicação não tem conta, não comunica com nenhum servidor e não recolhe nada. Por isso também não existe cópia na nuvem, e a cópia de segurança é importante.</p>
+
+    <h3>Cópia de segurança e mudança de telemóvel</h3>
+    <p>Definições → Cópia de segurança: escolhe as secções e se queres incluir as fotografias, e obténs um único ficheiro .zip. No telemóvel novo, Definições → Restaurar e escolhe esse ficheiro. Podes juntar aos dados existentes ou substituí-los.</p>
+
+    <h3>Não recebo os avisos de validade</h3>
+    <p>Verifica se as notificações estão autorizadas para a aplicação e se o documento tem data de validade. O aviso chega às 9 da manhã, com a antecedência escolhida nas Definições.</p>
+
+    <h3>Posso mudar o idioma ou as unidades?</h3>
+    <p>Sim, nas Definições: seis idiomas e sistema métrico ou imperial. No primeiro arranque a aplicação usa o idioma do dispositivo, se o conhecer.</p>
+
+    <h3>As calculadoras substituem um computador de mergulho?</h3>
+    <p>Nunca. São ferramentas informativas: verifica sempre os resultados e mergulha dentro dos limites da tua formação e do teu brevê. A aplicação não calcula a descompressão.</p>
+
+    <p><a href="./#pt">Política de privacidade</a></p>
+
+    <p class="data">Atualizada a 8 de setembro de 2026</p>
+  </section>
+</div>
+
+<script>
+// Il testo delle sei lingue e' gia' tutto nella pagina: qui si nasconde
+// semplicemente quello che non serve. Senza JavaScript restano visibili tutte
+// le lingue una sotto l'altra, quindi l'assistenza e' leggibile comunque -
+// anche dai controlli automatici che non eseguono gli script.
+(function () {
+  var LINGUE = ["it", "en", "es", "fr", "de", "pt"];
+  document.body.classList.add("js");
+
+  function mostra(codice) {
+    if (LINGUE.indexOf(codice) === -1) { codice = "en"; }
+    LINGUE.forEach(function (c) {
+      document.getElementById(c).hidden = (c !== codice);
+    });
+    document.querySelectorAll("#lingue a").forEach(function (a) {
+      a.classList.toggle("attiva", a.dataset.lang === codice);
+    });
+    document.documentElement.lang = codice;
+  }
+
+  document.querySelectorAll("#lingue a").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      mostra(a.dataset.lang);
+      try { history.replaceState(null, "", "#" + a.dataset.lang); } catch (err) {}
+    });
+  });
+
+  // Lingua iniziale: quella chiesta nell'indirizzo, altrimenti quella del
+  // browser se la conosciamo, altrimenti inglese.
+  var daUrl = location.hash.replace("#", "");
+  var daBrowser = (navigator.language || "en").slice(0, 2).toLowerCase();
+  mostra(LINGUE.indexOf(daUrl) !== -1 ? daUrl : daBrowser);
+})();
+</script>
+</body>
+</html>
